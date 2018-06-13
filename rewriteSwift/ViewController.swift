@@ -7,17 +7,27 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var myTextView: UITextView!
+    @IBOutlet weak var resultTextView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        myTextView.rx.text
+            .subscribe(onNext: { [weak self] text in
+                self!.resultTextView.text = text
+            })
+       
     }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
 

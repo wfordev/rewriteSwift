@@ -7,7 +7,25 @@
 		<key>rewriteSwift.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>5</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>420B469D20D14FE4007B11F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>420B46B120D14FE6007B11F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>420B46BC20D14FE6007B11F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>
